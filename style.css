@@ -1,0 +1,112 @@
+@import "./node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.header-title {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+.header-title span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.header-text {
+  font-size: 16px;
+  letter-spacing: 0.05cap;
+  color: var(--Very-Dark-Blue);
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--Gray);
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: var(--Gray);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  padding: 15px;
+  border: none;
+  background-color: var(--Blue);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-icon i {
+  color: var(--Blue);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-icon i:hover {
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  letter-spacing: 0.05cap;
+}
+
+.input-area {
+  position: relative;
+}
+
+label {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  font-size: 12px;
+  color: red;
+  margin-left: 10px;
+}
+
+.display-block {
+  display: block;
+}
+
+.border-red {
+  border: 1px solid red;
+}
